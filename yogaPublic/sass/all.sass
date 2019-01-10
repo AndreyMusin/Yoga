@@ -1,0 +1,98 @@
+@import "sectionForm.sass"
+@import "yoga_program.sass"
+@import "gallery.sass"
+
+@font-face
+  font-family: Freestyle Script Regular
+  src: url(../fonts/Freestyle_Script.ttf)
+
+@font-face
+  font-family: OpenSans Bold
+  src: url(../fonts/OpenSans/OpenSans-Bold.ttf)
+
+@font-face
+  font-family: OpenSans Regular
+  src: url(../fonts/OpenSans/OpenSans-Regular.ttf)
+
+*
+  margin: 0
+  padding: 0
+
+a
+  text-decoration: none
+  font-size: 14px
+  color: #555555
+
+ul li a:not(.altlogo):hover
+  border-bottom: 2px solid #5363db
+  color: #5363db
+
+li
+  text-decoration: none
+  list-style: none
+  float: left
+  margin-right: 30px
+
+body
+  font-family: "Open Sans", sans-serif
+  line-height: 1.5
+
+nav
+  width: 100%
+  height: 100px
+
+ul
+  width: 815px
+  height: 100px
+  margin: 0 auto
+
+
+ul li:nth-child(3)
+  margin-right: 0
+
+ul li:not(.graficlogo)
+  margin-top: 31px
+
+ul li:last-child
+  display: none
+
+li.graficlogo
+  margin: 16px 125px
+
+@media (max-width: 320px)
+  .logo li:not(:first-child)
+    display: none
+
+  .logo.responsive li
+    margin-top: 15px
+
+  .logo li.icon
+    float: right
+    display: block
+    margin-top: 32px
+
+  .logo li.icon a
+    color: black
+    display: block
+
+  .logo
+    width: 100%
+    height: 100px
+
+  .logo.responsive
+    position: relative
+    display: block
+
+  .logo.responsive li.icon a
+    position: absolute
+    top: 0
+    right: 0
+    text-align: left
+
+  .logo.responsive li
+    float: none
+    display: block
+
+  .logo .graficlogo a
+    display: none
+
